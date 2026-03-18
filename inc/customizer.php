@@ -56,6 +56,12 @@ function liminal_customize_partial_blogdescription() {
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
 function liminal_customize_preview_js() {
-	wp_enqueue_script( 'liminal-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), _S_VERSION, true );
+	wp_enqueue_script(
+		'liminal-customizer',
+		get_template_directory_uri() . '/js/customizer.js',
+		array( 'customize-preview' ),
+		LIMINAL_VERSION,
+		true
+	);
 }
 add_action( 'customize_preview_init', 'liminal_customize_preview_js' );
