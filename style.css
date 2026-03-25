@@ -749,16 +749,27 @@ textarea {
 }
 /* Navigation
 --------------------------------------------- */
+/*
 .main-navigation {
 	display: block;
 	width: 100%;
 }
+* */
+.main-navigation {
+	display: flex;
+	justify-content: center;
+	padding: 0.5rem 1rem;
+	background: rgba(255, 240, 200, 0.03);
+	border-top: 1px solid rgba(255,255,255,0.05);
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+}
 
 .main-navigation ul {
-	display: none;
+	display: flex;
+	gap: 1.5rem;
 	list-style: none;
 	margin: 0;
-	padding-left: 0;
+	padding: 0;
 }
 
 .main-navigation ul ul {
@@ -794,9 +805,35 @@ textarea {
 	position: relative;
 }
 
+/*
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+}
+* */
+.main-navigation a {
+	color: var(--muted);
+	text-decoration: none;
+	font-size: 0.9rem;
+	letter-spacing: 0.08em;
+	padding: 0.4rem 0.6rem;
+	transition: all 0.2s ease;
+	opacity: 0.85;
+	/*
+	Maybe, but we'd have to apply it to all other elements as well.
+	border-radius: 3px;
+	* */
+}
+
+.main-navigation a:hover {
+	color: var(--accent);
+	background: rgba(255, 220, 150, 0.06);
+	opacity: 1;
+}
+
+.main-navigation .current-menu-item > a {
+	color: var(--text);
+	border-bottom: 1px solid rgba(255, 220, 150, 0.4);
 }
 
 /* Small menu. */
