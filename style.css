@@ -589,6 +589,7 @@ table {
 a {
 	color: var(--accent);
 	text-decoration: none;
+	transition: color 0.25s ease 0.05s;
 }
 
 a:hover,
@@ -596,6 +597,7 @@ a:focus,
 a:active {
 	opacity: 0.85;
 	text-decoration: underline;
+	background: rgba(255, 255, 220, 0.08);
 }
 
 a:focus {
@@ -721,8 +723,8 @@ textarea {
 }
 
 ::selection {
-	background: #bfc7d5;
-	color: #0e0f12;
+	background: #e8e0c2;
+	color: #2b2a26;
 }
 /* Navigation
 --------------------------------------------- */
