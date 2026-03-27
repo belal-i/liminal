@@ -22,7 +22,15 @@
 			<span class="sep"> | </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'liminal' ), 'liminal', '<a href="https://github.com/belal-i/">Belal Ibrahim</a>' );
+				printf(
+					esc_html__(
+						'Theme: %1$s v%2$s by %3$s.',
+						'liminal'
+					),
+					'Liminal',
+					LIMINAL_VERSION,
+					'<a href="https://github.com/belal-i/">Belal Ibrahim</a>'
+				);
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
