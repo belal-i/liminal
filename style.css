@@ -481,7 +481,7 @@ big {
 /* Elements
 --------------------------------------------- */
 :root {
-	--bg: #221d17;        /* was ~#1c1813 → slightly lighter */
+	--bg: #221d17;
 	--bg-soft: #2c241c;
 	--panel: #362d23;
 
@@ -507,11 +507,6 @@ body::before {
 	content: "";
 	position: fixed;
 	inset: 0;
-
-	/*
-	background: rgba(255, 220, 150, 0.06);
-* */
-
 	background:
 		radial-gradient(
 			ellipse at center,
@@ -525,24 +520,13 @@ body::after {
 	content: "";
 	position: fixed;
 	inset: 0;
-
 	background:
 		radial-gradient(
 			circle at 50% 20%,
 			rgba(255, 210, 140, 0.12),
 			transparent 65%
 		);
-
 	pointer-events: none;
-	/*
-	content: "";
-	position: fixed;
-	inset: 0;
-
-	opacity: 0.05;
-
-	pointer-events: none;
-* */
 }
 
 hr {
@@ -736,25 +720,12 @@ textarea {
 	color: var(--muted);
 }
 
-/*
-.site-title::after {
-	content: " ●";
-	color: #d9c27a;
-}
-* */
-
 ::selection {
 	background: #bfc7d5;
 	color: #0e0f12;
 }
 /* Navigation
 --------------------------------------------- */
-/*
-.main-navigation {
-	display: block;
-	width: 100%;
-}
-* */
 .main-navigation {
 	display: flex;
 	justify-content: center;
@@ -805,12 +776,6 @@ textarea {
 	position: relative;
 }
 
-/*
-.main-navigation a {
-	display: block;
-	text-decoration: none;
-}
-* */
 .main-navigation a {
 	color: var(--muted);
 	text-decoration: none;
@@ -819,10 +784,6 @@ textarea {
 	padding: 0.4rem 0.6rem;
 	transition: all 0.2s ease;
 	opacity: 0.85;
-	/*
-	Maybe, but we'd have to apply it to all other elements as well.
-	border-radius: 3px;
-	* */
 }
 
 .main-navigation a:hover {
