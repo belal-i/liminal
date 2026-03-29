@@ -1,20 +1,17 @@
-=== liminal ===
+=== Liminal ===
 
 Contributors: Belal Ibrahim, automattic
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
-
+Tags: blog
 Requires at least: 4.5
 Tested up to: 6.9
 Requires PHP: 5.6
 Stable tag: 1.0.0-alpha-1
 License: GNU General Public License v2 or later
-License URI: LICENSE
-
-A theme based on the liminal aesthetic.
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Description
+A theme based on the liminal aesthetic.
 
 == Installation ==
 
@@ -26,7 +23,7 @@ Description
 
 = Does this theme support any plugins? =
 
-liminal includes support for WooCommerce and for Infinite Scroll in Jetpack.
+Liminal includes support for WooCommerce and for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
