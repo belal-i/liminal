@@ -9,7 +9,7 @@
 
 if ( ! defined( 'LIMINAL_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'LIMINAL_VERSION', '1.0.0-alpha-1' );
+	define( 'LIMINAL_VERSION', '1.0.0-rc-1' );
 }
 
 /**
