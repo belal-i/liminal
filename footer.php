@@ -24,7 +24,7 @@
 				/* translators: 1: Theme name, 2: Theme author. */
 				printf(
 					esc_html__(
-						'Theme: %1$s v%2$s by %3$s.',
+						'Theme: %1$s v%2$s by %3$s',
 						'liminal'
 					),
 					'Liminal',
