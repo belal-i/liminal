@@ -893,6 +893,10 @@ textarea {
 	font-size: 1rem;
 }
 
+.entry-footer span {
+	margin-right: 1em;
+}
+
 /* Comments
 --------------------------------------------- */
 .comment-content a {
