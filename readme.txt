@@ -34,6 +34,11 @@ Liminal includes support for WooCommerce and for Infinite Scroll in Jetpack.
 * Generate theme from https://underscores.me/
 
 
+== Copyright ==
+
+Liminal WordPress Theme, Copyright 2026 Belal Ibrahim
+Liminal is distributed under the terms of the GNU GPLv2.
+
 == Credits ==
 
 * Based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
