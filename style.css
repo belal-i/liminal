@@ -730,6 +730,8 @@ textarea {
 --------------------------------------------- */
 .main-navigation {
 	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 	justify-content: center;
 	padding: 0.5rem 1rem;
 	background: rgba(255, 240, 200, 0.03);
@@ -738,11 +740,38 @@ textarea {
 }
 
 .main-navigation ul {
-	display: flex;
-	gap: 1.5rem;
+	display: none;
 	list-style: none;
-	margin: 0;
-	padding: 0;
+	width: 100%;
+	text-align: left;
+}
+
+.menu-toggle {
+	align-self: flex-start; /* or flex-end for right */
+	background: none;
+	border: none;
+	font-size: 1.5rem;
+	padding: 0.5rem;
+	cursor: pointer;
+}
+
+@media screen and (min-width: 37.5em) {
+	.menu-toggle {
+		display: none;
+	}
+
+	.main-navigation {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.main-navigation ul {
+		display: flex;
+		gap: 1.5rem;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
 }
 
 .main-navigation ul ul {
@@ -800,20 +829,8 @@ textarea {
 }
 
 /* Small menu. */
-.menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
-}
-
-@media screen and (min-width: 37.5em) {
-
-	.menu-toggle {
-		display: none;
-	}
-
-	.main-navigation ul {
-		display: flex;
-	}
 }
 
 .site-main .comment-navigation,
