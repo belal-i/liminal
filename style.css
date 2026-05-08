@@ -775,6 +775,7 @@ textarea {
 }
 
 .main-navigation ul ul {
+	display: none;
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
@@ -798,9 +799,10 @@ textarea {
 	width: 200px;
 }
 
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
+.main-navigation li:hover > ul,
+.main-navigation li.focus > ul {
 	left: auto;
+	display: block;
 }
 
 .main-navigation li {
@@ -821,6 +823,14 @@ textarea {
 	color: var(--accent);
 	background: rgba(255, 220, 150, 0.06);
 	opacity: 1;
+}
+
+.main-navigation a:focus {
+	color: var(--accent);
+	background: rgba(255, 220, 150, 0.06);
+	opacity: 1;
+	outline: 2px solid rgba(255, 220, 150, 0.35);
+	outline-offset: 2px;
 }
 
 .main-navigation .current-menu-item > a {

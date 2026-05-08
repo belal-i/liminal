@@ -57,4 +57,26 @@
 
 	// Get all the link elements with children within the menu.
 	const linksWithChildren = menu.querySelectorAll( '.menu-item-has-children > a, .page_item_has_children > a' );
+
+	for ( const link of links ) {
+		link.addEventListener( 'focus', toggleFocus, true );
+		link.addEventListener( 'blur', toggleFocus, true );
+	}
+
+	function toggleFocus( event ) {
+		if ( event.type === 'focus' || event.type === 'blur' ) {
+			let self = this;
+
+			// Move up through the ancestors until we hit .nav-menu.
+			while ( ! self.classList.contains( 'nav-menu' ) ) {
+
+				// Toggle .focus on li elements.
+				if ( 'li' === self.tagName.toLowerCase() ) {
+					self.classList.toggle( 'focus' );
+				}
+
+				self = self.parentNode;
+			}
+		}
+	}
 }() );
