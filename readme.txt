@@ -5,7 +5,7 @@ Tags: blog
 Requires at least: 4.5
 Tested up to: 6.9
 Requires PHP: 5.6
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,6 +26,9 @@ A theme based on the liminal aesthetic.
 Liminal includes support for WooCommerce and for Infinite Scroll in Jetpack.
 
 == Changelog ==
+
+= 1.0.3 - May 18 2026 =
+* Fix nested nav menu child item accessibility and readability issues.
 
 = 1.0.2 - May 11 2026 =
 * Fix menu item focus issues in navigation menu.
