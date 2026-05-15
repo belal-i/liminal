@@ -780,6 +780,14 @@ textarea {
 		margin: 0;
 		padding: 0;
 	}
+
+	/* Third-level menus */
+	.main-navigation ul ul li:hover > ul,
+	.main-navigation ul ul li.focus > ul,
+	.main-navigation ul ul li:focus-within > ul {
+		left: 100%;
+		top: 0;
+	}
 }
 
 .main-navigation ul ul {
@@ -790,6 +798,10 @@ textarea {
 	top: 100%;
 	left: -999em;
 	z-index: 99999;
+
+	background: rgba(20, 20, 20, 0.98);
+	border: 1px solid rgba(255,255,255,0.08);
+	min-width: 220px;
 }
 
 .main-navigation ul ul ul {
@@ -800,15 +812,23 @@ textarea {
 .main-navigation ul ul li:hover > ul,
 .main-navigation ul ul li.focus > ul {
 	display: block;
-	left: auto;
+	left: 70%;
 }
 
 .main-navigation ul ul a {
 	width: 200px;
 }
 
+.main-navigation ul ul a:focus,
+.main-navigation ul ul a:hover {
+	background: rgba(255, 220, 150, 0.08);
+	color: var(--accent);
+	outline: none;
+}
+
 .main-navigation li:hover > ul,
-.main-navigation li.focus > ul {
+.main-navigation li.focus > ul,
+.main-navigation li:focus-within > ul {
 	left: auto;
 	display: block;
 }
